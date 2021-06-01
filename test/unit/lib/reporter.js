@@ -41,7 +41,7 @@ describe('lib/reporter', () => {
 
 		it('creates a BFJ stream', () => {
 			assert.calledOnce(bfj.streamify);
-			assert.calledWithExactly(bfj.streamify, mockResults.issues);
+			assert.calledWithExactly(bfj.streamify, JSON.stringify(mockResults.issues));
 		});
 
 		it('handles the stream `dataError` event', () => {
