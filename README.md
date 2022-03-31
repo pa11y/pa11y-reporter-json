@@ -60,9 +60,8 @@ const json = require('pa11y-reporter-json');
 const pa11y = require('pa11y');
 
 pa11y('http://example.com').then(results => {
-    // Returns a string with the results formatted as JSON
-    const jsonResults = json.results(results);
-    console.log(jsonResults);
+    // Outputs a string with the results formatted as JSON
+    json.results(results);
 });
 ```
 
